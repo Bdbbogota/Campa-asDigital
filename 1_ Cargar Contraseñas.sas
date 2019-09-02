@@ -1,13 +1,17 @@
 /*Ruta con claves y accesos a BD;*/
 
-/*%let Ruta_Key = %STR(/sasdata/P_RIESGO/MIS/DSILVA5/CAMPAÑAS/KEY);*/
-/*%let Ruta_Key = %STR(/sasdata/P_RIESGO/MIS/OGONZA9/CAMPAÑAS/KEY);*/
-%let Ruta_Key = %STR(/sasdata/P_RIESGO/MIS/DSILVA5/CAMPAÑAS/KEY);
+/*%let Ruta_Key = %STR(/sasdata/P_RIESGO/MIS/DSILVA5/CAMPAÃ‘AS/KEY);*/
+/*%let Ruta_Key = %STR(/sasdata/P_RIESGO/MIS/OGONZA9/CAMPAÃ‘AS/KEY);*/
+%let Ruta_Key = %STR(/sasdata/P_RIESGO/MIS/DSILVA5/CAMPAÃ‘AS/KEY);
 
-%include "&Ruta_Key./AccessBD.sas"; *Macro para asignacion de usuario y constraseña para acceso a BD;
+%include "&Ruta_Key./AccessBD.sas"; *Macro para asignacion de usuario y constraseÃ±a para acceso a BD;
 %put &access_PDSR.;
 %put &access_PDODS.;
 %put &access_crto.; 
+%put &access_PDBPM.; 
+
+
+
 
 
 
